@@ -1,0 +1,1 @@
+document.getElementById("divDemo").setAttribute("class","Demo")

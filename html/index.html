@@ -1,41 +1,28 @@
 <html>
 
-<head>
-    <title>
-        My personel Page
-    </title>
-</head>
+<head> </head>
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
 
 <body>
-    <script src="../js/Week3/Monday"></script>
-    <img src="images/scenary.jpg" alt="Smiley face" height="400" width="1800">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <div>
-        <h3>My favourite food</h3>
-        <ul>
-            <li>Sphaghetti Bolonese</li>
-            <li>Meat</li>
-            <li>Roast chilli chicken</li>
-        </ul>
-    </div>
-    <div>
-        <h3>My Favourite sesons </h3>
-        <ol>
-            <li>Spring</li>
-            <li>Winter</li>
-            <li>Autumn</li>
-            <li>Summer</li>
-        </ol>
-    </div>
-    <div>
-        <h5>Why Code Nation</h5>
-        <p>Description goes here</p>
+    
+    <div id="divDemo"> sample `text</div>
 
-        <footer>
-            <p>My Links</p>
-            <p>linkedIn <a href="mailto:someone@example.com">
-                    someone@example.com</a>.</p>
-        </footer>
+    <button id="click" class="button" onclick="actionEvent(event,'click')"> Hello !</button>
+
+    <script> 
+        //document.getElementById("divDemo").setAttribute("class","Demo")
+        function actionEvent(event, actionName){
+            document.getElementById("divDemo").setAttribute("class","Demo")
+            var but = document.getElementsByClassName('button');
+            console.log(but[0])
+            but[0].style.backgroundColor = "red";
+           // but[0].setAttribute('color','black')
+       // document.getElementById(actionName).style.display = "block";
+        //document.getElementById(actionParent).style.backgroundColor = "lightgrey";
+
+      }
+    </script>
 </body>
 
 </html>
